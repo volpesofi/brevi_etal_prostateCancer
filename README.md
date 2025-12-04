@@ -1,54 +1,55 @@
-# Reanalysis of Public Prostate Cancer Transcriptomic Datasets
+# brevi_etal_prostateCancer  
+**Reanalysis of public prostate cancer transcriptomic datasets**  
 
-This repository contains scripts used to reanalyse public array, bulk RNA-seq, and single-cell RNA-seq datasets from prostate cancer studies.
-
----
-
-## 📘 Single-cell RNA-seq
-
-We reanalysed three single-cell RNA-seq datasets:
-
-### • Cheng et al., *Eur Urol*, 2022  
-Script: `scRNA_analysis_Chengetal.R`  
-Input data obtained directly from the authors.
-
-### • Song et al., *Nat Commun*, 2022  
-Script: `scRNA_analysis_Songetal.R`  
-Data retrieved from GEO: [GSE176031](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE176031)  
-Paper: https://pmc.ncbi.nlm.nih.gov/articles/PMC8748675/
-
-### • Zaidi et al., *PNAS*, 2024  
-Script: `scRNA_analysis_Zaidietal.R`  
-Data retrieved from GEO: [GSE264573](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE264573)  
-Paper: https://www.pnas.org/doi/10.1073/pnas.2322203121
+This repository provides scripts to re-analyse publicly available array, bulk RNA-seq, and single-cell RNA-seq datasets from prostate cancer studies.  
 
 ---
 
-## 📗 Bulk RNA-seq and Microarray
+## 📄 Table of Contents
 
-### • Beltran et al., *Nat Med*, 2016  
-Script: `RNAseq_analysis_Beltranetal.R`  
-Data obtained from dbGaP: **phs000909.v.p1**
-
-### • Jachetti et al., *Cancer Res*, 2015  
-Script: `array_analysis_Jachettietal.R`  
-Data retrieved from GEO: [GSE65502](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE65502)  
-Paper: https://aacrjournals.org/cancerres/article/75/10/2095/599799
+- [Datasets & Scripts](#datasets--scripts)  
+- [Requirements](#requirements)  
+- [Usage](#usage)  
+- [License](#license)  
+- [Contact](#contact)  
+- [Acknowledgements](#acknowledgements)  
 
 ---
 
-## 📦 Requirements
+## Datasets & Scripts
 
-- R ≥ 4.2  
-- Recommended packages: `Seurat`, `SingleCellExperiment`, `DESeq2`, `limma`, `tidyverse`, etc.  
-(You can adjust this section based on your actual scripts.)
+### Single-cell RNA-seq  
+| Study | Script | Data source / Notes |
+|---|---|---|
+| Cheng et al., *Eur Urol*, 2022 | `scRNA_analysis_Chengetal.R` | Data obtained directly from the authors |
+| Song et al., *Nat Commun*, 2022 | `scRNA_analysis_Songetal.R` | GEO: [GSE176031](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE176031) — see https://pmc.ncbi.nlm.nih.gov/articles/PMC8748675/ |
+| Zaidi et al., *PNAS*, 2024 | `scRNA_analysis_Zaidietal.R` | GEO: [GSE264573](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE264573) — see https://www.pnas.org/doi/10.1073/pnas.2322203121 |
+
+### Bulk RNA-seq & Microarray  
+| Study | Script | Data source |
+|---|---|---|
+| Beltran et al., *Nat Med*, 2016 | `RNAseq_analysis_Beltranetal.R` | dbGaP: phs000909.v.p1 |
+| Jachetti et al., *Cancer Res*, 2015 | `array_analysis_Jachettietal.R` | GEO: [GSE65502](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE65502) — see https://aacrjournals.org/cancerres/article/75/10/2095/599799 |
 
 ---
 
-## ▶️ Usage
+## Requirements  
 
-Each script can be run independently.  
-Example:
+- R (≥ 4.2)  
+- Recommended R packages (depending on the script):  
+  - `Seurat`, `SingleCellExperiment`, `DESeq2`, `limma`, `tidyverse`, …  
+
+
+---
+
+## Usage  
+
+Each script can be run independently. Examples:
 
 ```bash
-Rscript scRNA_analysis_Zaidietal.R
+Rscript scRNA_analysis_Zaidietal.R  
+Rscript RNAseq_analysis_Beltranetal.R  
+```
+
+To use you need to update the path of input data once retrived. 
+Input file with tested signatures are provided in the folder `input/`.
