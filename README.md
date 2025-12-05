@@ -30,6 +30,7 @@ This repository provides scripts to re-analyse publicly available array, bulk RN
 |---|---|---|
 | Beltran et al., *Nat Med*, 2016 | `RNAseq_analysis_Beltranetal.R` | dbGaP: phs000909.v.p1 — see https://www.nature.com/articles/nm.4045 |
 | Jachetti et al., *Cancer Res*, 2015 | `array_analysis_Jachettietal.R` | GEO: [GSE65502](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE65502) — see https://aacrjournals.org/cancerres/article/75/10/2095/599799 |
+| Abida et al., *PNAS*, 2019 | `RNAseq_analysis_Abida.R` | Data kindly provided by A.Chinnaiyan (arul@umich.edu) and M.Cieslik (mcieslik@med.umich.edu) upon request — see https://doi.org/10.1073/pnas.1902651116 |
 
 ---
 
