@@ -56,3 +56,10 @@ To use you need to update the path of input data once retrived.
 
 
 Input file with tested signatures are provided in the folder `input/`.
+
+
+## Contributors
+
+- Anna Sofia Tascini (tascini.annasofia@unisr.it)
+
+- Aurora Maurizio (maurizio.aurora@hsr.it)
