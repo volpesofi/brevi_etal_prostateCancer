@@ -1,6 +1,8 @@
 # brevi_etal_prostateCancer  
 **Reanalysis of public prostate cancer transcriptomic datasets**  
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17832151.svg)](https://doi.org/10.5281/zenodo.17832151)
+
 This repository provides scripts to re-analyse publicly available array, bulk RNA-seq, and single-cell RNA-seq datasets from prostate cancer studies.  
 
 ---
